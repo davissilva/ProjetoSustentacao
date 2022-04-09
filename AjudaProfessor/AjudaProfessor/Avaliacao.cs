@@ -6,24 +6,19 @@ using System.Threading.Tasks;
 
 namespace AjudaProfessor
 {
-    internal class Avaliacao
+    public class Avaliacao
     {
-        String nome;
-        double nota;
-
-        public Avaliacao() { 
-        }
+        public string Nome { get; set; }
+        public double Nota { get; set; }
 
         public Avaliacao(string nome, double nota)
         {
-            this.Nome = nome;
-            this.Nota = nota;
+            Nome = nome;
+            Nota = nota;
         }
 
-        public string Nome { get => nome; set => nome = value; }
-        public double Nota { get => nota; set => nota = value; }
         public string toString() {
-            return "Avaliação: " + this.nome + " | Nota: " + this.nota; 
+            return "Avaliação: " + Nome + " | Nota: " + Nota; 
         }
     }
 }

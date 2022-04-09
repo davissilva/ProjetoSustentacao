@@ -8,52 +8,45 @@ namespace AjudaProfessor
 {
     public class Aluno
     {
-        private String nome;
-        private Materia materia;
-        double media;
-        bool aprovado;
+        public String Nome { get;  set; }
+        public Materia Materia { get; set; }
+        public double Media { get; set; }
+        public bool Aprovado { get; set; }
 
         public Aluno(string nome)
         {
-            this.Nome = nome;
-            this.Aprovado = false;
+            Nome = nome;
+            Aprovado = false;
         }
-
-        public string Nome { get => nome; set => nome = value; }
-  
-        public double Media { get => media; set => media = value; }
-
-        public bool Aprovado { get => aprovado; set => aprovado = value; }
-        internal Materia Materia { get => materia; set => materia = value; }
 
         private double calcularMedia(List<Avaliacao> avaliacoes)
         {
             double total = 0;
             
-            foreach (Avaliacao avaliacao in avaliacoes) {
+            foreach (var avaliacao in avaliacoes) {
                 total += avaliacao.Nota;
             }
 
-            this.media = total/avaliacoes.Count();
+            Media = total/avaliacoes.Count();
 
             return Media;
         }
         
         public String avaliarMedia()
         {
-            this.media = calcularMedia(this.Materia.Avaliacoes);
+            Media = calcularMedia(this.Materia.Avaliacoes);
 
-            if (media < 4)
+            if (Media < 4)
             {
                 return "Aluno reprovado!";
             }
-            if (media >= 4 && media < 6)
+            if (Media >= 4 && Media < 6)
             {
                 return "Aluno está de recuperação!";
             }
-            if (media >= 7 || media >= 6)
+            if (Media >= 7 || Media >= 6)
             {
-                this.aprovado = true;
+                Aprovado = true;
                 return "Parabéns, você passou";
             }
             else

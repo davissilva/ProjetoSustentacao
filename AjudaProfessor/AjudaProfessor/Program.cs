@@ -26,8 +26,9 @@ namespace AjudaProfessor
             materia.Avaliacoes.Add(nota1);
             materia.Avaliacoes.Add(nota2);
 
-            String mensagem = aluno.avaliarMedia;
+            String mensagem = aluno.avaliarMedia();
 
+            Console.WriteLine(mensagem);
 
             Console.ReadKey();
         }
