@@ -1,0 +1,8 @@
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\bin\Debug\AjudaProfessor.exe.config
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\bin\Debug\AjudaProfessor.exe
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\bin\Debug\AjudaProfessor.pdb
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\obj\Debug\AjudaProfessor.csproj.AssemblyReference.cache
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\obj\Debug\AjudaProfessor.csproj.SuggestedBindingRedirects.cache
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\obj\Debug\AjudaProfessor.csproj.CoreCompileInputs.cache
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\obj\Debug\AjudaProfessor.exe
+D:\Material de Estudo\projeto-sustentacao\AjudaProfessor\AjudaProfessor\obj\Debug\AjudaProfessor.pdb
