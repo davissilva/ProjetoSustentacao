@@ -33,6 +33,7 @@ namespace API
             services.AddControllers();
             services.AddScoped<ITimeService, TimeService>();
             services.AddScoped<ITimeRepository, TimeRepository>();
+            services.AddScoped<IDesafio, DesafioService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
