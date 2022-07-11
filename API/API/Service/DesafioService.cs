@@ -17,7 +17,7 @@ namespace API.Service
 
             novaLista.Sort((IComparer<int>)lista);
 
-            return novaLista;
+            return lista;
         }
 
         public char retornaUltimoCaractere(string nome)
