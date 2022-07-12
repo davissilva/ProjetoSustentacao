@@ -17,7 +17,7 @@ namespace API.Controllers
             desafio = ds;
         }
 
-        [HttpGet("Calcula IMC")]
+        [HttpGet("calculaIMC")]
         public ActionResult<double> calcularIMC(double altura, double peso) {
             try
             {
@@ -33,7 +33,7 @@ namespace API.Controllers
             } 
         }
 
-        [HttpGet("Ordena Lista")]
+        [HttpPost("ordenaLista")]
         public ActionResult<List<int>> ordenaLista([FromBody]List<int> lista) {
             try
             {
@@ -48,7 +48,7 @@ namespace API.Controllers
             }
         }
 
-        [HttpGet("Obtem ultimo Caractere")]
+        [HttpGet("obtemUltimoCaractere")]
         public ActionResult<char> ultimoCaractere(String nome) {
             try
             {
@@ -64,9 +64,5 @@ namespace API.Controllers
                 return BadRequest(msg.Message);
             }
         }
-
-        
-
-
     }
 }

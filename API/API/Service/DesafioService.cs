@@ -1,4 +1,5 @@
 ﻿using API.Interfaces;
+using System;
 using System.Collections.Generic;
 
 
@@ -8,15 +9,11 @@ namespace API.Service
     {
         public double calcularIMC(double altura, double peso)
         {
-            return peso / System.Math.Pow(altura, 2);
+            return peso / Math.Pow(altura, 2);
         }
 
         public List<int> ordenarLista(List<int> lista)
         {
-            List<int> novaLista = new List<int>();
-
-            novaLista.Sort((IComparer<int>)lista);
-
             return lista;
         }
 
