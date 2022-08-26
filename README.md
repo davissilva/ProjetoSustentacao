@@ -1,3 +1,3 @@
 # ProjetoSustentacao
 
-Projeto API Rest utilizando C#.
+Projeto API Rest usando C#.
